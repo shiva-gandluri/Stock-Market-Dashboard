@@ -1,0 +1,251 @@
+
+<div class=" content">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class=" card">
+          <div class=" card-header">
+            <h4 class=" card-title">Display using API</h4>
+          </div><!-- card-header-->
+        <div class=" card-body" *ngIf="isDataAvailable">
+        <table class="table border border-white" class="table table-bordered">  
+          <ng-container *ngFor= "let user of data$['Time Series (5min)'] | keyvalue; let i=index; let last = last ">
+    
+            <thead class="thead-light" *ngIf="last">
+              <tr>
+                <th class="text-center">Time Stamp</th>     
+                <th class="text-center" *ngFor="let stock of user.value | keyvalue"> {{stock.key}} </th>
+              </tr>
+            </thead> 
+            <tbody *ngIf="last">
+              <tr>
+                <td class="text-center">{{user.key}}</td>     
+                <td class="text-center" *ngFor="let stock of user.value | keyvalue"> {{stock.value}} </td>
+              </tr>
+            </tbody> 
+    
+          </ng-container>
+        </table>
+        </div> <!-- card body-->
+        </div> <!-- card-->
+        </div><!-- col-sm-6-->
+      </div><!-- row-->
+      <div class=" row">
+        <div class=" col-lg-6">
+          <div class=" card card-chart">
+            <div class=" card-header">
+              <h5 class=" card-category">API Data</h5>
+              <h3 class=" card-title">
+                <i class=" tim-icons icon-coins text-danger-states"> </i> Microsoft 
+              </h3>
+            </div><!--card-header-->
+            <div class=" card-body">
+              <div class=" chart-area"><canvas id="msftAPI"> </canvas></div>
+            </div> <!--card body-->
+          </div> <!--card-chart-->
+        </div> <!--col-lg-6-->
+        <div class=" col-lg-6">
+          <div class=" card">
+            <div class=" card-header">
+              <h4 class=" card-title">Using Modal</h4>
+            </div><!--card header-->
+          <div class = "card-body">
+              <button type="button" class="btn btn-info btn-lg" (click)="openFormModal()">Open Modal</button>
+             
+          </div> <!--card body-->
+          </div> <!--card-->
+        </div> <!--col-lg-6-->
+
+
+        </div> <!--row-->
+    <div class="row">
+      <div class=" col-sm-6">
+        <div class="card">
+          <div class="card-body" *ngIf="isDataAvailable">
+            <ng-container *ngFor= "let user of data$['Time Series (5min)'] | keyvalue; let i=index; let last = last ">
+              <p *ngIf="last">{{user.key}} -  </p>  
+              <ul>
+                <div *ngFor="let stock of user.value | keyvalue">     
+                     <li *ngIf="last"> <p>{{stock.key}}: {{stock.value}} </p> </li>
+                </div>
+              </ul>  
+               
+            </ng-container> 
+            
+          <!--
+                
+    <div *ngFor= "let user of data$['Time Series (5min)'] | keyvalue">
+              <div *ngIf="">
+               <p>{{ user.key }} : {{ user.value }} </p>
+              </div>
+            </div>
+
+            <div ng-repeat="(key, obj) in data$"> 
+              <ul> 
+                  <li ng-repeat="(prop, value) in obj | limitTo : 3"> 
+                      {{prop}}: {{value}} 
+                  </li> 
+              </ul> 
+            </div> 
+
+
+            <div class=" card-body">
+            <ngb-alert [type]="'info'" [dismissible]="false">
+              <span> This is a plain notification </span>
+            </ngb-alert>
+            <ngb-alert [type]="'info'" *ngIf="!staticAlertClosed" [dismissible]="false">
+              <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close" (click)="staticAlertClosed = true">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+              <span> This is a notification with close button. </span>
+            </ngb-alert>
+            <ngb-alert
+              class=" alert-with-icon"
+              data-notify="container"
+              [type]="'info'"*ngIf="!staticAlertClosed1" [dismissible]="false">
+                <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close" (click)="staticAlertClosed1 = true">
+                  <i class="tim-icons icon-simple-remove"></i>
+                </button>
+              <span class=" tim-icons icon-bell-55" data-notify="icon">
+              </span>
+              <span data-notify="message">
+                This is a notification with close button and icon.
+              </span>
+            </ngb-alert>
+            <ngb-alert
+              class=" alert-with-icon"
+              data-notify="container"
+              [type]="'info'"
+              *ngIf="!staticAlertClosed2" [dismissible]="false">
+                <button type="button" aria-hidden="true" class="close" data-dismiss="alert" aria-label="Close" (click)="staticAlertClosed2 = true">
+                  <i class="tim-icons icon-simple-remove"></i>
+                </button>
+              <span class=" tim-icons icon-bell-55" data-notify="icon">
+              </span>
+              <span data-notify="message">
+                This is a notification with close button and icon and have
+                many lines. You can see that the icon and the close button
+                are always vertically aligned. This is a beautiful
+                notification. So you don't have to worry about the style.
+              </span>
+            </ngb-alert>
+          </div>-->
+          
+          </div> <!-- card-body-->
+        </div><!-- card-->
+      </div><!-- col-sm-6-->
+
+    
+    
+
+      <div class="col-sm-6">
+          <div class=" card">
+        <div class=" card-body" *ngIf="isDataAvailable">
+        <ng-container *ngFor= "let user of data$['Time Series (5min)'] | keyvalue; let i=index; let last = last ">
+          <h5 *ngIf="last">{{user.key}} - </h5>  
+          <ul class="list-inline">
+            <div  *ngIf="last" >     
+                <li class="w-25 list-inline-item" *ngFor="let stock of user.value | keyvalue"> <h4>{{stock.key}}:</h4> <p>{{stock.value}}</p>  </li>
+            </div>
+          </ul>  
+        </ng-container>
+
+        </div> <!-- card body-->
+      </div> <!-- card-->
+    </div><!-- col-sm-6-->
+  </div> 
+
+  <div class="row">
+    <div class=" col-sm-12">
+      <div class=" card">
+        <div class=" card-header">
+         <h4 class=" card-title">Display using Webscrapping</h4>
+       </div>
+       <div class=" card-body">
+       <h5 *ngIf="isWeb">Microsoft Stock Price : {{msftStockPrice}}   </h5> 
+     </div>
+     </div> 
+   </div>
+  </div><!-- row-->
+  
+
+
+      
+      <!--<div class=" col-md-12">
+        <div class=" card">
+          <div class=" card-body">
+            <div class=" places-buttons">
+              <div class=" row">
+                <div class=" col-md-6 ml-auto mr-auto text-center">
+                  <h4 class=" card-title">Notifications Places</h4>
+                  <p class=" category">Click to view notifications</p>
+                </div>
+              </div>
+              <div class=" row">
+                <div class=" col-lg-8 ml-auto mr-auto">
+                  <div class=" row">
+                    <div class=" col-md-4">
+                      <button
+                        class=" btn btn-danger btn-block"
+                        (click)="showNotification('top', 'left')"
+                      >
+                        Top Left
+                      </button>
+                    </div>
+                    <div class=" col-md-4">
+                      <button
+                        class=" btn btn-danger btn-block"
+                        (click)="showNotification('top', 'center')"
+                      >
+                        Top Center
+                      </button>
+                    </div>
+                    <div class=" col-md-4">
+                      <button
+                        class=" btn btn-danger btn-block"
+                        (click)="showNotification('top', 'right')"
+                      >
+                        Top Right
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=" row">
+                <div class=" col-lg-8 ml-auto mr-auto">
+                  <div class=" row">
+                    <div class=" col-md-4">
+                      <button
+                        class=" btn btn-danger btn-block"
+                        (click)="showNotification('bottom', 'left')"
+                      >
+                        Bottom Left
+                      </button>
+                    </div>
+                    <div class=" col-md-4">
+                      <button
+                        class=" btn btn-danger btn-block"
+                        (click)="
+                          showNotification('bottom', 'center')
+                        "
+                      >
+                        Bottom Center
+                      </button>
+                    </div>
+                    <div class=" col-md-4">
+                      <button
+                        class=" btn btn-danger btn-block"
+                        (click)="showNotification('bottom', 'right')"
+                      >
+                        Bottom Right
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+  </div>
+ 
