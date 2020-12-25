@@ -23,16 +23,9 @@ We are very excited to share this dashboard with you and we look forward to hear
 ## Table of Contents
 
 * [Versions](#versions)
-* [Demo](#demo)
 * [Quick Start](#quick-start)
 * [Documentation](#documentation)
 * [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
 
 
 ## Versions
@@ -41,11 +34,6 @@ We are very excited to share this dashboard with you and we look forward to hear
 [<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme)
 [<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-react?ref=bda-readme)
 [<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-black-dashboard?ref=bda-readme)
-
-
-| HTML | Angular | React | Vue |
-| --- | --- | --- | --- |
-| [![Black Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/93/thumb/opt_bd_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard?ref=bda-readme) | [![Black Dashboard Angular](https://s3.amazonaws.com/creativetim_bucket/products/169/thumb/opt_bd_angular_thumbnail.jpg)](https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme) | [![Black Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/136/thumb/opt_bd_react.jpg)](https://www.creative-tim.com/product/black-dashboard-react?ref=bda-readme) | [![Vue Black Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/99/thumb/opt_bd_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-black-dashboard?ref=bda-readme) |
 
 
 ## Terminal Commands
@@ -161,4 +149,4 @@ black-dashboard-angular
 ├── tsconfig.json
 └── tslint.json
 ```
-`
+
