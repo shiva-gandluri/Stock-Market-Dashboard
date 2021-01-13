@@ -1,4 +1,4 @@
-# [Stock Market Dashboard]
+# Stock Market Dashboard
 
 
 
@@ -7,17 +7,14 @@
 Stock Market Dashboard is a beautiful [Bootstrap 4](http://getbootstrap.com/) and [Angular](https://angular.io/) Admin Dashboard with a huge number of components built to fit together and look amazing. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you. It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics.
 Stock Market Dashboard comes packed with all plugins that you might need inside a project and documentation on how to get started. It is light and easy to use, and also very powerful.
 
-Stock Market Dashboard features over 16 individual components, giving you the freedom of choosing and combining. This means that there are thousands of possible combinations. All components can take variations in color, that you can easily modify using SASS files. You will save a lot of time going from prototyping to full-functional code because all elements are implemented.
-We thought about everything, so this dashboard comes with 2 versions, Dark Mode and Light Mode.
+Stock Market Dashboard features over 16 individual components, giving you the freedom of choosing and combining. This means that there are thousands of possible combinations. All components can take variations in color, that you can easily modify using SASS files. 
 
-Special thanks go for the owners of these plugins:
+I've used the following plugins:
 - [Perfect Scrollbar](http://utatti.github.io/perfect-scrollbar/) for the nice scrollbars for windows.
 - [Ng Bootstrap](https://ng-bootstrap.github.io/#/home) for the wonderful components.
 - [Chartjs](https://www.chartjs.org/) for the wonderful charts.
 
-We are very excited to share this dashboard with you and we look forward to hearing your feedback!
-
-**Example Pages** We wanted to fully display the power of this dashboard, so the kit comes packed with examples showing you how to use the components.
+I've also leveraged the use of REST API calls to store the data in the backend and display the data dynamically onto the UI in the form of trends.  Along with this, the dashboad also displays the current stock prices of companies by extracting the data using web-scraping. These values get updated dynamically with new trends of the stock in the stock market. This servers the purpose as an excellent business tool to check both the internal trends of business and also external stock price details of a company. 
 
 ## Table of Contents
 
@@ -29,10 +26,9 @@ We are very excited to share this dashboard with you and we look forward to hear
 
 ## Versions
 
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard?ref=bda-readme)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-angular?ref=bda-readme)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/react.svg" width="60" height="60" />](https://www.creative-tim.com/product/black-dashboard-react?ref=bda-readme)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-black-dashboard?ref=bda-readme)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://getbootstrap.com/docs/4.0/getting-started/download/)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/angular.png" width="60" height="60" />](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7)
+
 
 
 ## Terminal Commands
