@@ -97,12 +97,25 @@ black-dashboard-angular
 │   │   │       ├── auth-layout.module.ts
 │   │   │       └── auth-layout.routing.ts
 │   │   └── pages
+|   |       ├── apple-stock
+|   |       |   ├──apple-stock.component.html
+|   |       |   ├──apple-stock.component.scss
+|   |       |   ├── apple-stock.component.spec.ts
+|   |       |   ├── apple-stock.component.ts
+|   |       |   ├── apple-stock.model.ts
+|   |       |   ├── apple-stock.service.spec.ts
+│   │       │   └── apple-stock.service.ts
 │   │       ├── dashboard
 │   │       │   ├── dashboard.component.html
 │   │       │   └── dashboard.component.ts
 │   │       ├── icons
 │   │       │   ├── icons.component.html
 │   │       │   └── icons.component.ts
+|   |       ├── modal-for-microsoft
+|   |       |   ├── modal-for-microsoft.component.html
+|   |       |   ├── modal-for-microsoft.component.scss
+|   |       |   ├── modal-for-microsoft.component.spec.ts
+|   |       |   ├── modal-for-microsoft.component.ts
 │   │       ├── map
 │   │       │   ├── map.component.html
 │   │       │   └── map.component.ts
